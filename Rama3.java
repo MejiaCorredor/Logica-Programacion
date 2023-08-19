@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//JOSE MANUEL MEJIA CORREDOR
 public class Rama3{  
   public static void main(String[] args){
     Scanner leer = new Scanner(System.in);
@@ -10,16 +10,24 @@ public class Rama3{
     
     String usuario;
     String password;
+    boolean credencialesCorrectos;
     
     do {
-      System.out.println("Ingresa el usuario");  
+      credencialesCorrectos = true;
+      
+        System.out.println("Ingresa el usuario");  
       usuario = leer.nextLine();
 
       System.out.println("Ingresa el password");
       password = leer.nextLine();
 
+      if (!usuario.equals(usuarioCorrecto) || !password.equals(passwordCorrecto)) {
+        credencialesCorrectos = false;
+        System.out.println("Usuario o password incorrecto. \n Vuelve a intentar. ");
+    }
       
-    } while(!usuario.equals(usuarioCorrecto) && !password.equals(passwordCorrecto));
+    } while(!credencialesCorrectos);
     
+    leer.close();
   }
 }
