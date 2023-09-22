@@ -21,8 +21,13 @@ public class CalculadoraFun {
     }
 
     public static void main(String[] args) {
-        System.out.println(suma(0, 0));
+        System.out.println(suma(0, 0)); 
+
+        System.out.println(resta(0, 0));
+
+        System.out.println(multiplica(0, 0));
         
+        System.out.println(dividir(0, 0));
     }
 
 }
