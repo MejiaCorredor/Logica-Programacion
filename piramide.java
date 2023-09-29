@@ -26,10 +26,28 @@ public class piramide {
                     System.out.println(" ");
                 }
             }
-
-
-            
+ 
         }
     }
+
+    public static void matrizirrregular(){
+        
+        String[][] matriz = new String[2][];
+
+        for(int fila = 0; fila < matriz.length; fila++){
+
+            matriz[fila] = new String[fila+2];
+            for (int columna = 0; columna < matriz[fila].length; columna++){
+                matriz [fila][columna] = "valor "+ columna;
+            }
+        }
+
+
+
+    }
+
+
+
+
 }
 
