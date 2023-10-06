@@ -41,13 +41,6 @@ public class piramide {
                 matriz [fila][columna] = "valor "+ columna;
             }
         }
-
-
-
     }
-
-
-
-
 }
 

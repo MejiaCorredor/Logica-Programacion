@@ -39,5 +39,15 @@ public class Random {
     }
 
 
+    public int nextInt(int i) {
+        return 0;
+    }
+
+
+    public double nextDouble() {
+        return 0;
+    }
+
+
     }
 }
