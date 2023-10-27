@@ -18,6 +18,11 @@ public class CalculadoraFun {
             return 0;
         }
         return i / b;
+
+    }
+    
+    static double division(int operador, int operando){
+        
     }
 
     public static void main(String[] args) {
