@@ -3,6 +3,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class writer {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         try{
 

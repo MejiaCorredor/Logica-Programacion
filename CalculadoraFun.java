@@ -22,6 +22,7 @@ public class CalculadoraFun {
     }
     
     static double division(int operador, int operando){
+        return operando;
         
     }
 
