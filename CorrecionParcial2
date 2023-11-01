@@ -1,0 +1,35 @@
+package logica;
+//Jose Manuel Mejia Corredor
+import java.util.Random;
+
+public class parcial2Hoteles {
+    public static void main(String[] args) {
+        try {
+            String[] Luces = { "Led", "Halogenas", "Multiled" };
+            double[] costos_Hora = { 0.50, 0.25, 1 };
+
+            Random alea = new Random();
+
+            int Hoteles = alea.nextInt(7) + 1;
+
+            for (int i = 0; i < Hoteles; i++) {
+                int Pisos = alea.nextInt(13) + 3;
+
+                for (int j = 0; j < Pisos; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        int tipoDeLuzIndex = alea.nextInt(Luces.length);
+                        String tipoDeLuz = Luces[tipoDeLuzIndex];
+                        double costoPorHora = costos_Hora[tipoDeLuzIndex];
+                        int horas = alea.nextInt(25);
+
+                        double costoTotal = horas * costoPorHora;
+                        System.out.println("Hotel " + (i + 1) + ", Piso " + (j + 1) + ", Luz " + (k + 1)+ ": Tipo de luz = " + tipoDeLuz + ", Horas encendidas = " + horas + ", Costo total = $"+ costoTotal);
+                    }
+                }
+            }
+
+        } catch (Exception e) {
+
+        }
+    }
+}
